@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+    </head>
+<body>
+    <div class="app">
+        <div class="block">
+
+            <div class="box box01" onmouseleave="leaveBox(this)" onmouseenter="enterBox(this)" onclick="openPopup(this)">
+                <div class="box-inner">
+                    <div class="title">
+                        <h3 class="title__name">Sample 01</h3>
+                        <h4 class="title__subtitle">Image slideshow</h4>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+            </div>
+
+            <div class="box box02" onmouseleave="leaveBox(this)" onmouseenter="enterBox(this)" onclick="openPopup(this)">
+                <div class="box-inner">
+                    <div class="title">
+                        <h3 class="title__name">Sample 02</h3>
+                        <h4 class="title__subtitle">Image slideshow</h4>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+            </div>
+
+            <div class="box box03" onmouseleave="leaveBox(this)" onmouseenter="enterBox(this)" onclick="openPopup(this)">
+                <div class="box-inner">
+                    <div class="title">
+                        <h3 class="title__name">Sample 01</h3>
+                        <h4 class="title__subtitle">Image slideshow</h4>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+            </div>
+
+
+            <div class="slide-control prev" onclick="prevSlide()">
+                <symbol id="icon-arrow" viewBox="0 0 24 24">
+                    <title>arrow</title>
+                    <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+                </symbol>
+            </div>
+            <div class="slide-control next" onclick="nextSlide()"></div>
+
+
+
+            <div class="content">
+                <div class="content__inner">
+                        <div class="content__close" onclick="closePopup()">Close</div>
+                        <h3 class="content__title">Sample 01</h3>
+                        <h4 class="content__subtitle">
+                                Integer facilisis lectus eget lacus semper
+                        </h4>
+                        <p class="content__para">
+                            Integer facilisis lectus eget lacus semper, sit amet imperdiet eros viverra. Praesent velit erat, blandit quis consectetur eu, mattis non eros. Phasellus consectetur tellus hendrerit purus lacinia gravida. Sed eget nisl eget nunc tincidunt bibendum. Phasellus quis enim sit amet lectus consequat dictum a non dolor.
+                        </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/app.js"></script>   
+</body>
+</html>
